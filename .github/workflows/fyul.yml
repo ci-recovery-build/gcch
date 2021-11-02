@@ -1,7 +1,5 @@
 name: Ubuntu
 on: 
-  push:
-    branches: [ main ]
   workflow_dispatch:
     inputs:
       auth:
@@ -99,8 +97,8 @@ jobs:
            expect eof
            '
       
-    - name: Continue
-      timeout-minutes: 400
+    - name: Sleep for 30 seconds
+      uses: jakejarvis/wait-action@master
       continue-on-error: true
-      run: |
-          while true; do echo "Being at Peace"; sleep 1800; done
+      with:
+        time: '400m'
