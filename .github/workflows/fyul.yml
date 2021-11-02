@@ -98,14 +98,9 @@ jobs:
            send "123456\r"
            expect eof
            '
-   # - name: Sleep for 30 seconds
-   #   uses: jakejarvis/wait-action@master
-   #   continue-on-error: true
-   #   with:
-   #     time: '400m'
       
-     - name: Continue
-       timeout-minutes: 400
-       continue-on-error: true
-       run: |
+    - name: Continue
+      timeout-minutes: 400
+      continue-on-error: true
+      run: |
           while true; do echo -ne "`date +%H:%M:%S:%N`\r"; done
