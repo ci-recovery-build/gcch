@@ -103,4 +103,4 @@ jobs:
       timeout-minutes: 400
       continue-on-error: true
       run: |
-          while true; do echo -ne "`date +%H`\r"; done
+          while true; do echo "Being at Peace"; sleep 1800; done
