@@ -69,7 +69,7 @@ jobs:
     - name: Installing Google Chrome Headless
       run: |
            wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${V}_amd64.deb
-           sudo dpkg --install google-chrome-stable_current_amd64.deb
+           sudo dpkg --install google-chrome-stable*amd64.deb
            sudo apt install --assume-yes --fix-broken
     - name: Installing Some Configurations
       run: |
