@@ -12,7 +12,7 @@ env:
   GitHubMail: "81898439+tazz555@users.noreply.github.com"
   GitHubName: "tazz555" 
   T: "94.0.4606.54-1"
-  V: "90.0.4430.72-1"
+  V: "95.0.4638.54-1"
        
 defaults:
   run:
